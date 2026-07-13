@@ -392,20 +392,20 @@ em {
   background: var(--color-ink);
 }
 .hero-sticker {
-  position: absolute;
-  top: 10%;
-  right: -10%;
-  width: 250px;
-  height: auto;
-  z-index: 10;
-  pointer-events: none;
-  animation: wobble 6s ease-in-out infinite;
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  border: 1px solid var(--color-ink);
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 32px;
+  margin-top: 40px;
+  animation: slow-spin 40s linear infinite;
 }
 .hero-collage-img {
   width: 100%;
-  height: auto;
-  object-fit: contain;
-  filter: drop-shadow(4px 4px 0px rgba(0,0,0,0.2));
+  height: 100%;
+  object-fit: cover;
 }
 .hero-label {
   font-family: var(--font-mono);
@@ -443,12 +443,18 @@ em {
 .hero-campus-wrap {
   position: relative;
   border-top: 1px solid var(--color-ink);
+  padding: 40px 24px;
+  display: flex;
+  justify-content: center;
 }
 .hero-campus-img {
   width: 100%;
-  height: 400px;
+  max-width: 800px;
+  height: 350px;
   object-fit: cover;
   display: block;
+  border: 1px solid var(--color-ink);
+  box-shadow: var(--shadow-newspaper);
 }
 .campus-caption {
   position: absolute;
@@ -506,20 +512,17 @@ em {
   font-size: clamp(3rem, 6vw, 6rem);
 }
 .welcome-deco {
-  position: absolute;
-  bottom: -40px;
-  right: -60px;
-  width: 180px;
-  height: auto;
-  z-index: 10;
-  pointer-events: none;
-  animation: wobble 8s ease-in-out infinite reverse;
+  width: 200px;
+  height: 200px;
+  border: 1px solid var(--color-ink);
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 40px;
 }
 .welcome-deco-img {
   width: 100%;
-  height: auto;
-  object-fit: contain;
-  filter: drop-shadow(4px 4px 0px rgba(0,0,0,0.2));
+  height: 100%;
+  object-fit: cover;
 }
 
 .welcome-right {
@@ -528,8 +531,7 @@ em {
 }
 @media (min-width: 768px) {
   .welcome-right { 
-    grid-column: span 6;
-    grid-column-start: 7; 
+    grid-column: 7 / span 6;
     padding-top: 80px;
   }
 }
@@ -745,11 +747,8 @@ em {
 }
 .team-collage {
   max-width: 100%;
-  width: 300px;
-  height: auto;
-  object-fit: contain;
-  filter: drop-shadow(4px 4px 0px rgba(0,0,0,0.2));
-  animation: wobble 7s ease-in-out infinite;
+  border: 1px solid var(--color-ink);
+  box-shadow: var(--shadow-newspaper);
 }
 
 /* ═══════════════ SECTION JOIN ═══════════════ */
